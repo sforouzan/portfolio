@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'CocoGothic';
+    src: url('/assets/fonts/CocoGothicBOLD.TTF') format('truetype');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+  
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('/assets/fonts/VisbyCFLight.TTF') format('truetype');
+    /* font-weight: bold;
+    font-style: normal; */
+}
+
+@font-face {
+    font-family: 'VisbyMed';
+    src: url('/assets/fonts/VisbyCFMed.TTF') format('truetype');
+    /* font-weight: bold;
+    font-style: normal; */
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

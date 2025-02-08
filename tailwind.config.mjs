@@ -9,14 +9,21 @@ export default withMT({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        CocoGothic: ["CocoGothic", 'sans-serif'],
+        VisbyCF: ["VisbyCF", 'sans-serif'],
+        VisbyMed: ["VisbyMed", 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'custom-black': '#2D2A26'
+        'custom-black': '#1E1D1C',
+        'milk-white': '#E5E1E6'
       },
       fontSize: {
-        hero: "clamp(54px, 10vw, 150px)",
-        heading: "clamp(46px, 12vw, 105px)",
+        hero: "clamp(58px, 15vw, 400px)",
+        heroSub: "clamp(10px, 4.75vw, 120px)",
+        heading: "clamp(46px, 7.25vw, 145px)",
       },
       screens: {
         'xxl': '1700px',
