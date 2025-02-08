@@ -10,16 +10,20 @@ const items = [
   {
     'link': '/lunarbloom',
     'image': '/assets/images/lunarbanner.png',
-    'title': 'Lunar Bloom'
+    'title': 'LUNAR BLOOM',
+    'type': 'PACKAGING DESIGN'
   },
   {
     'link': '/cosmiccomfort',
     'image': '/assets/images/cc2.png',
-    'title': 'Cosmic Comfort'
+    'title': 'COSMIC COMFORT',
+    'type': 'BRAND DESIGN'
   },
   {
-    'link': '/',
-    'image': 'https://placehold.co/600x400.svg'
+    'link': '/taylorswift',
+    'image': '/assets/images/ts-train.png',
+    'title': 'TAYLOR SWIFT',
+    'type': 'POSTER DESIGN'
   },
   {
     'link': '/',
