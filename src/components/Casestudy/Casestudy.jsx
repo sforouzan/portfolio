@@ -95,7 +95,7 @@ const Casestudy = (props) => {
                 />
             </div>
 
-                <div className="flex flex-col md:flex-row rounded-[10px] gap-20 bg-[#2F2F2F] p-10">
+                <div className="flex flex-col md:flex-row rounded-[10px] gap-20 bg-[#2F2F2F] mt-20 p-10">
                     <div className="flex flex-col basis-1/3 md:basis-2/5 text-justify">
                         <h2 className="font-VisbyBold pb-[20px] text-[30px]">FEATURES</h2>
                             {features.map((feature) => (
