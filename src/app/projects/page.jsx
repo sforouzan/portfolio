@@ -9,7 +9,7 @@ export const metadata = {
 const items = [
   {
     'link': '/lunarbloom',
-    'image': '/assets/images/lunarbanner.png',
+    'image': '/assets/images/cans.png',
     'title': 'LUNAR BLOOM',
     'type': 'PACKAGING DESIGN'
   },
@@ -26,8 +26,10 @@ const items = [
     'type': 'POSTER DESIGN'
   },
   {
-    'link': '/',
-    'image': 'https://placehold.co/600x400.svg'
+    'link': '/beep',
+    'image': '/assets/images/beepsmallbanner.png',
+    'title': 'BEEP',
+    'type': 'APP DEVELOPMENT'
   },
 ]
 
@@ -36,7 +38,7 @@ export default function Page() {
     <>
       <section className="pt-[188px] pb-[400px]">
         <h1 className="font-CocoGothic text-[12vw] xl:text-[12.5vw] text-milk-white leading-[86%] uppercase">Projects</h1>
-        <h2 className="font-VisbyMed">Filter by: Graphic Design  /  UX/UI Design  / Development</h2>
+        {/* <h2 className="font-VisbyMed">Filter by: Graphic Design  /  UX/UI Design  / Development</h2> */}
         <div className="pt-[56px]">
           <Gallery items={items} />
         </div>

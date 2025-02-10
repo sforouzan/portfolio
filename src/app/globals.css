@@ -19,7 +19,21 @@
     font-style: normal; */
 }
 
+@font-face {
+    font-family: 'VisbyBold';
+    src: url('/assets/fonts/VisbyCFBold.TTF') format('truetype');
+    /* font-weight: bold;
+    font-style: normal; */
+}
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    .animate-fadeIn {
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+  }

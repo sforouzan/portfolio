@@ -13,6 +13,7 @@ export default withMT({
         CocoGothic: ["CocoGothic", 'sans-serif'],
         VisbyCF: ["VisbyCF", 'sans-serif'],
         VisbyMed: ["VisbyMed", 'sans-serif'],
+        VisbyBold: ["VisbyBold", 'sans-serif']
       },
       colors: {
         background: "var(--background)",
