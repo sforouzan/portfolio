@@ -11,6 +11,7 @@ const projectData = {
   title: 'Beep',
   type: 'APP DEVELOPMENT | CASE STUDY',
   programsUsed: 'REACT NATIVE, EXPO GO, ADOBE ILLUSTRATOR, FIGMA',
+  projectRole: 'Frontend Designer',
   images : {
     header: '/assets/images/beepbanner.png',
     body: '/'

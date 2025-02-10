@@ -9,7 +9,7 @@ export const metadata = {
 const items = [
   {
     'link': '/beep',
-    'image': '/assets/images/beepsmallbanner.png',
+    'image': '/assets/images/beepsmallbanner1.png',
     'title': 'BEEP',
     'type': 'APP DEVELOPMENT'
   },

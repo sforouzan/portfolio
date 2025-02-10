@@ -6,7 +6,7 @@ import Image from "next/image";
 import classNames from "classnames";
 
 const Casestudy = (props) => {
-  const { title, type, programsUsed, images, summary, slides, gallery } = props;
+  const { title, type, programsUsed, projectRole, images, summary, slides, gallery } = props;
   const features = [
     {
       id: 1,
@@ -44,7 +44,8 @@ const Casestudy = (props) => {
     <div className="pt-[190px] pb-[55px] md:mb-60">
       <h1 className="text-[12vw] font-CocoGothic text-milk-white leading-[86%] uppercase">{title}</h1>
       <p className="font-VisbyCF uppercase text-[30px] pt-2">{type}</p>
-      <p className="font-VisbyCF uppercase italic pt-2 pb-[27px]">Tools used: {programsUsed}</p>
+      <p className="font-VisbyCF uppercase italic pt-2">Tools used: {programsUsed}</p>
+      <p className="font-VisbyCF uppercase italic pb-[27px]">Project Role: {projectRole}</p>
       <Image
         src={images?.header || 'https://placehold.co/1140x450.svg'}
         alt="portfolio item"
@@ -90,7 +91,7 @@ const Casestudy = (props) => {
                     layout="responsive"
                     width={1000}
                     height={1000}
-                    className="rounded-[10px]"
+                    className="rounded-[10px] mt-20"
                 />
             </div>
 
