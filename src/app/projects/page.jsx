@@ -8,6 +8,12 @@ export const metadata = {
 
 const items = [
   {
+    'link': '/beep',
+    'image': '/assets/images/beepbanner.png',
+    'title': 'BEEP',
+    'type': 'APP DEVELOPMENT'
+  },
+  {
     'link': '/lunarbloom',
     'image': '/assets/images/cans.png',
     'title': 'LUNAR BLOOM',
@@ -21,16 +27,11 @@ const items = [
   },
   {
     'link': '/taylorswift',
-    'image': '/assets/images/ts-train.png',
+    'image': '/assets/images/ts_mockup.png',
     'title': 'TAYLOR SWIFT',
     'type': 'POSTER DESIGN'
   },
-  {
-    'link': '/beep',
-    'image': '/assets/images/beepsmallbanner.png',
-    'title': 'BEEP',
-    'type': 'APP DEVELOPMENT'
-  },
+
 ]
 
 export default function Page() {
