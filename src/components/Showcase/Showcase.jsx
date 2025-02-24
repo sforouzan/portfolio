@@ -17,8 +17,8 @@ return (
         height={1000}
         className="rounded-[10px]"
       />
-      <div className="md:flex pt-[30px] gap-x-[30px] items-center">
-        <div className="xl:w-1/2 flex-shrink-0">
+      <div className="1600xl:flex pt-[30px] gap-x-[30px] items-center">
+        <div className="w-full 1600xl:w-1/2 flex-shrink-0">
           <Image
             src={images?.body || 'https://placehold.co/590x572.svg'}
             alt="portfolio item"
@@ -50,12 +50,13 @@ return (
            {gallery.map((image, index) => (
             <div
             key={index}
-            className={classNames("bg-gray-100 h-[500px] relative rounded-[10px]")}
+            className={classNames("bg-gray-100 h-auto relative rounded-[10px]")}
           >
               <Image
                 src={image} 
                 alt="gallery item"
-                fill 
+                width={800}
+                height={800}
                 className="object-cover rounded-[10px]" 
                 />
             </div>

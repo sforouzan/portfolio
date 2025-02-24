@@ -4,6 +4,7 @@ import { useState } from "react";
 import { CarouselCustomNavigation } from "../Carousel/Carousel";
 import Image from "next/image";
 import classNames from "classnames";
+import ScrollRevealSlider from "../ScrollReveal/ScrollReveal";
 
 const Casestudy = (props) => {
   const { title, type, programsUsed, projectRole, images, summary, slides, gallery } = props;
@@ -59,7 +60,7 @@ const Casestudy = (props) => {
             <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col md:flex-1 text-justify">
                     <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] uppercase">WHAT IS BEEP?</h3>
-                    <p className="font-VisbyCF flex flex-col gap-y-5">Beep is a safety app that offers real-time safety insights, location-sharing, and proactive emergency features to provide peace of mind - making it an ideal companion for everyone, especially women and female presenting users navigating alone. Built on the values of assurance, simplified safety, and trust, Beep aims to turn potentially stressful journeys into secure, confident experiences.</p>
+                    <p className="font-VisbyCF flex flex-col gap-y-5">Beep is an AI-driven safety app that enhances personal security by offering real-time crime heat maps using data from the Vancouver Police Department. It provides AI-assisted safe route navigation, emergency alerts, loud alarms, and safe zone recommendations, helping users navigate urban areas with confidence. With seamless location sharing and instant emergency contact features, Beep redefines personal safety through innovative technology and local partnerships.</p>
                     <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] uppercase">Target Audience</h3>
                     <p className="font-VisbyCF flex flex-col gap-y-5">Women, femme-identifying individuals, and anyone who values enhanced safety or feels at risk when navigating urban areas.</p>
                     <div className="flex pt-[50px]">
@@ -169,12 +170,27 @@ const Casestudy = (props) => {
 
                 <div>
                     <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] mt-10 mb-2 uppercase">Wireframes</h3>
-                    <div className="relative w-full h-0 pb-[56.25%] rounded-[10px] overflow-hidden">
+                    <div className="relative w-full h-0 pb-[56.25%] mb-20 rounded-[10px] overflow-hidden">
                         <iframe
                             style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
                             width="100%"
                             height="100%"
                             src="https://embed.figma.com/design/33zvfoWul345Ji8LNj3U0k/Beep-Wireframes?node-id=6005-8624&embed-host=share"
+                            allowFullScreen
+                            className="absolute top-0 left-0 w-full h-full"
+                        ></iframe>
+                    </div>
+                    <ScrollRevealSlider image1={"/assets/images/beep-lofi.png"} image2={"/assets/images/beep-hifi.png"} />
+                </div>
+
+                <div>
+                    <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] mt-10 mb-2 uppercase">Architecture & User Journey</h3>
+                    <div className="relative w-full h-0 pb-[56.25%] mb-20 rounded-[10px] overflow-hidden">
+                        <iframe
+                            style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                            width="100%"
+                            height="100%"
+                            src="https://embed.figma.com/design/33zvfoWul345Ji8LNj3U0k/Beep-Wireframes?node-id=8247-3202&embed-host=share"
                             allowFullScreen
                             className="absolute top-0 left-0 w-full h-full"
                         ></iframe>

@@ -54,7 +54,7 @@ const Navigation = ({isSticky = true}) => {
                     className="relative inline-block cursor-pointer font-VisbyMed text-white 
                               before:bg-white before:absolute before:-bottom-0 before:-left-0 
                               before:block before:h-[1px] before:w-full before:origin-bottom-right 
-                              before:scale-x-0 before:transition before:duration-300 before:ease-in-out 
+                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
                               hover:before:origin-bottom-left hover:before:scale-x-100"
                   >
                     Home
@@ -65,7 +65,7 @@ const Navigation = ({isSticky = true}) => {
                       className="relative inline-block cursor-pointer font-VisbyMed text-white 
                               before:bg-white before:absolute before:-bottom-0 before:-left-0 
                               before:block before:h-[1px] before:w-full before:origin-bottom-right 
-                              before:scale-x-0 before:transition before:duration-300 before:ease-in-out 
+                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
                               hover:before:origin-bottom-left hover:before:scale-x-100" 
                       href="#">About</a>
                   </li>
@@ -74,7 +74,7 @@ const Navigation = ({isSticky = true}) => {
                       className="relative inline-block cursor-pointer font-VisbyMed text-white 
                               before:bg-white before:absolute before:-bottom-0 before:-left-0 
                               before:block before:h-[1px] before:w-full before:origin-bottom-right 
-                              before:scale-x-0 before:transition before:duration-300 before:ease-in-out 
+                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
                               hover:before:origin-bottom-left hover:before:scale-x-100" 
                       href="/projects">Projects</a>
                   </li>

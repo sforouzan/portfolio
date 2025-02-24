@@ -25,9 +25,11 @@ export default withMT({
         hero: "clamp(58px, 15vw, 400px)",
         heroSub: "clamp(10px, 4.75vw, 120px)",
         heading: "clamp(46px, 7.25vw, 145px)",
+        cardTitle: "clamp(18px, 2vw, 36px)",
       },
       screens: {
         'xxl': '1700px',
+        '1600xl': '1600px'
       }
     },
   },
