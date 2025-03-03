@@ -14,7 +14,7 @@ const Gallery = ({ items }) => {
           >
             <a href={item.link} className="block w-full h-full rounded-[10px]">
               {!!item.title && (
-                <div className="absolute text-cardTitle flex-col font-CocoGothic text-milk-white top-0 left-0 z-10 bg-black/60 h-full w-full flex items-center justify-center rounded-[10px] opacity-0 hover:opacity-100 transition-all duration-[.5s] leading-none text-center px-4">{item.title}<span className="font-VisbyCF text-[15px] xxl:text-[20px]">{item.type}</span></div>
+                <div className="select-none absolute text-cardTitle flex-col font-CocoGothic text-milk-white top-0 left-0 z-10 bg-black/60 h-full w-full flex items-center justify-center rounded-[10px] opacity-0 hover:opacity-100 transition-all duration-[.5s] leading-none text-center px-4">{item.title}<span className="select-none font-VisbyCF text-[15px] xxl:text-[20px]">{item.type}</span></div>
               )}
               <Image
                 src={item.image} // Use fallback image if item.image is not provided

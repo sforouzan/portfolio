@@ -9,7 +9,7 @@ export function CarouselCustomNavigation({slides}) {
       (
       <Carousel
         className="rounded-xl"
-        transition={{ type: "spring", mass: 0.5}}
+        transition={{ type: "spring", mass: 0.3}}
         navigation={({ setActivendex, activeIndex, length }) => (
             <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
             {new Array(length).fill("").map((_, i) => (

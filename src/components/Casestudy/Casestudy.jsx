@@ -5,6 +5,7 @@ import { CarouselCustomNavigation } from "../Carousel/Carousel";
 import Image from "next/image";
 import classNames from "classnames";
 import ScrollRevealSlider from "../ScrollReveal/ScrollReveal";
+import ScrollReveal2 from "../ScrollReveal2/ScrollReveal2";
 
 const Casestudy = (props) => {
   const { title, type, programsUsed, projectRole, images, summary, slides, gallery } = props;
@@ -185,7 +186,7 @@ const Casestudy = (props) => {
 
                 <div>
                     <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] mt-10 mb-2 uppercase">Architecture & User Journey</h3>
-                    <div className="relative w-full h-0 pb-[56.25%] mb-20 rounded-[10px] overflow-hidden">
+                    <div className="relative w-full h-0 pb-[56.25%] mb-2 rounded-[10px] overflow-hidden">
                         <iframe
                             style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
                             width="100%"
@@ -222,7 +223,11 @@ const Casestudy = (props) => {
                         Beep's architecture was designed with a clear focus on simplicity and user accessibility, ensuring that individuals of all technical backgrounds can easily navigate the app. The interface is intuitive, allowing users to quickly access essential features like route planning, safety alerts, and location sharing. By minimizing unnecessary complexity, Beep ensures that users can make the most of its powerful tools without feeling overwhelmed, making it a reliable and user-friendly safety companion.</p>
                         <p className="font-VisbyCF flex flex-col gap-y-5">
                         The app’s layout and functionality are thoughtfully crafted to prioritize ease of use, ensuring users can find what they need in moments of urgency. Whether planning a safe route or receiving a safety alert, Beep offers a clear and straightforward experience that doesn’t sacrifice effectiveness. The overall design empowers users to act quickly and confidently, knowing they can rely on a simple yet powerful interface to stay secure.</p>
-                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] mt-10 mb-2 uppercase">Promotional Materials</h3>
+                    <ScrollReveal2 image1={"/assets/images/beepbrochure2.png"} image2={"/assets/images/beepbrochure1.png"} />
                 </div>
         </div>
     </div>
