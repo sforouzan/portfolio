@@ -64,6 +64,41 @@ const Casestudy = (props) => {
                     <p className="font-VisbyCF flex flex-col gap-y-5">Beep is an AI-driven safety app that enhances personal security by offering real-time crime heat maps using data from the Vancouver Police Department. It provides AI-assisted safe route navigation, emergency alerts, loud alarms, and safe zone recommendations, helping users navigate urban areas with confidence. With seamless location sharing and instant emergency contact features, Beep redefines personal safety through innovative technology and local partnerships.</p>
                     <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] uppercase">Target Audience</h3>
                     <p className="font-VisbyCF flex flex-col gap-y-5">Women, femme-identifying individuals, and anyone who values enhanced safety or feels at risk when navigating urban areas.</p>
+                    <div className="flex gap-2 mt-2">
+                    <a href="https://docs.google.com/spreadsheets/d/1kJt4UG44dgGP3s849Wj166taCNonv4402Hu2OA-tiU0/edit?gid=1670594534#gid=1670594534" target="_blank" rel="noopener noreferrer">
+                        <button
+                            className="font-VisbyMed cursor-pointer border-2 rounded-full border-milk-white px-[16px] md:px-[20px] py-[10px] text-[14px] md:text-[16px] leading-snug self-center uppercase relative z-[2] min-w-[200px] md:min-w-[200px] text-center bg-custom-black overflow-hidden group md:mb-5 mt-10 md:mt-2"
+                            >
+                            <div className="relative h-[20px] w-full">
+                            {/* Front Text */}
+                            <span className="absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
+                                USABILITY TESTING
+                            </span>
+                            {/* Back Text */}
+                            <span className="absolute left-0 w-full translate-y-[30px] transition-all duration-300 invisible group-hover:visible group-hover:translate-y-0">
+                                USABILITY TESTING
+                            </span>
+                            </div>
+                        </button>
+                    </a>
+
+                    <a href="https://docs.google.com/spreadsheets/d/18jNe4otYjzAbPkG72CNo7rVKZwcHYIQ4pjMklCmBFEU/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">
+                        <button
+                            className="font-VisbyMed cursor-pointer border-2 rounded-full border-milk-white px-[16px] md:px-[20px] py-[10px] text-[14px] md:text-[16px] leading-snug self-center uppercase relative z-[2] min-w-[240px] md:min-w-[240px] text-center bg-custom-black overflow-hidden group md:mb-5 mt-10 md:mt-2"
+                            >
+                            <div className="relative h-[20px] w-full">
+                            {/* Front Text */}
+                            <span className="absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
+                                COMPETITIVE ANALYSIS
+                            </span>
+                            {/* Back Text */}
+                            <span className="absolute left-0 w-full translate-y-[30px] transition-all duration-300 invisible group-hover:visible group-hover:translate-y-0">
+                                COMPETITIVE ANALYSIS
+                            </span>
+                            </div>
+                        </button>
+                    </a>
+                    </div>
                     <div className="flex pt-[50px]">
                         <Image src={'assets/images/whitestar.svg'} height='100' width='83' alt="star icon" />
                         <Image src={'assets/images/whitestar.svg'} height='100' width='83' alt="star icon" />
@@ -81,7 +116,7 @@ const Casestudy = (props) => {
                     <p className="font-VisbyCF flex flex-col gap-y-5">Beep was created to empower not only women but also marginalized communities and anyone who values personal safety, offering them the tools to navigate their surroundings with confidence.</p>
                     <p className="font-VisbyCF flex flex-col gap-y-5">Recognizing that safety is a fundamental right, Beep aims to bridge the gap between uncertainty and security by providing real-time insights, AI-powered route recommendations, and community-driven alerts. Its mission is clear: to make safety accessible, reliable, and proactive, ensuring that everyone can move through the world with greater peace of mind.</p>
                 </div>
-                <div className="relative w-full h-full flex-1">
+                <div className="relative w-full h-full flex-1 md:sticky md:top-2 md:ml-10">
                     <Image src={'/assets/images/beepmockup.png'} height='6000' width='6000' alt="mockup screen" />
                 </div>
             </div>
@@ -228,6 +263,7 @@ const Casestudy = (props) => {
                 <div>
                     <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] mt-10 mb-2 uppercase">Promotional Materials</h3>
                     <ScrollReveal2 image1={"/assets/images/beepbrochure2.png"} image2={"/assets/images/beepbrochure1.png"} />
+                    <Image className="w-full rounded-[10px] mt-5" src={'/assets/images/beepcard1.png'} height='900' width='900' alt="business card" />
                 </div>
         </div>
     </div>

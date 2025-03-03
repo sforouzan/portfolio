@@ -34,13 +34,14 @@ export default function ScrollReveal2({image1, image2}) {
       {/* Reveal Section */}
       <section ref={sectionRef} className="h-[200vh]">
         <div className="sticky top-0 h-screen">
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full ">
             {/* Bottom Image */}
             <Image
               src={image1} // Replace with your bottom image path
               layout="fill"
               objectFit="cover"
               alt="Bottom Image"
+              className="rounded-[10px]"
             />
             {/* Top Image with clip-path */}
             <Image
@@ -48,6 +49,7 @@ export default function ScrollReveal2({image1, image2}) {
               layout="fill"
               objectFit="cover"
               alt="Top Image"
+              className="rounded-[10px]"
               style={{ clipPath: `inset(0 0 0 ${progress * 100}%)` }}
             />
           </div>
