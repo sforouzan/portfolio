@@ -10,7 +10,7 @@ const Hero = () => {
         <h2 className="select-none font-VisbyCF text-[22px] md:text-heroSub leading-tight text-center md:text-center pt-1 md:pt-0">
           UX/UI & GRAPHIC DESIGNER.
         </h2>
-        <p className="select-none font-VisbyCF text-[20px] leading-tight text-center md:text-center pt-1 md:pt-0">This portfolio site is under construction!🚧⚠️</p>
+        {/* <p className="select-none font-VisbyCF text-[20px] leading-tight text-center md:text-center pt-1 md:pt-0">This portfolio site is under construction!🚧⚠️</p> */}
       </div>
     </section>
   )
