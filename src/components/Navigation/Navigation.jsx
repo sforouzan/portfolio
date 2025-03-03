@@ -67,7 +67,7 @@ const Navigation = ({isSticky = true}) => {
                               before:block before:h-[1px] before:w-full before:origin-bottom-right 
                               before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
                               hover:before:origin-bottom-left hover:before:scale-x-100" 
-                      href="#">About</a>
+                      href="/about">About</a>
                   </li>
                   <li>
                     <a 
