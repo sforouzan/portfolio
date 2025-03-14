@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <>
       <section className="pt-[188px] pb-[400px]">
-        <h1 className="select-none font-CocoGothic text-[12vw] xl:text-[12.5vw] text-milk-white leading-[86%] uppercase">Projects</h1>
+        <h1 className="select-none font-CocoGothic text-[12vw] xl:text-[12.5vw] text-milk-white leading-[86%] uppercase animate-fade-up animate-once animate-delay-[500ms]">Projects</h1>
         {/* <h2 className="font-VisbyMed">Filter by: Graphic Design  /  UX/UI Design  / Development</h2> */}
         <div className="pt-[56px]">
           <Gallery items={items} />
