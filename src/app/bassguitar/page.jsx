@@ -14,7 +14,7 @@ const projectData = {
   },
   summary: 
   <div className="font-VisbyCF 1600xl:text-[18px] flex flex-col gap-y-5">
-    <p>This detailed vector illustration captures the intricate design of a Yamaha TRBX174 bass guitar; focusing on photorealism through precise shape drawing, shading, and gradient techniques. From the metallic hardware to the glossy finish, every component is carefully rendered to showcase the mechanical complexity of the instrument.</p>
+    <p>This detailed vector illustration captures the intricate design of a Yamaha TRBX174 bass guitar; focusing on photorealism through precise shape drawing, shading, and gradient techniques. </p>
     <p>This project served as an exercise in digital illustration using vector-based tools, demonstrating an understanding of form, lighting and material rendering.</p>
   </div>,
 }

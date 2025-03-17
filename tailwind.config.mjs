@@ -29,7 +29,8 @@ export default withMT({
       },
       screens: {
         'xxl': '1700px',
-        '1600xl': '1600px'
+        '1600xl': '1600px',
+        '1400xl': '1400px'
       }
     },
   },
