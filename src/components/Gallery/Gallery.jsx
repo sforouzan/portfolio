@@ -12,7 +12,7 @@ const Gallery = ({ items }) => {
           <div
             key={i}
             style={{ animationDelay: `${delay}ms` }}
-            className={classNames(`bg-gray-100 md:h-[23vw] relative rounded-[10px] animate-fade-up animate-once`, {
+            className={classNames(`md:h-[23vw] relative rounded-[10px] animate-fade-up animate-once`, {
               'md:col-span-2': i % 4 === 0 || i % 4 === 3, // Apply to every 4th div starting from 0 and 3
             })}
           >

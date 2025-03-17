@@ -12,7 +12,7 @@ const projectData = {
   type: 'PACKAGING DESIGN PROJECT',
   programsUsed: 'ADOBE ILLUSTRATOR, ADOBE PHOTOSHOP',
   images : {
-    header: '/assets/images/lunarbanner.png',
+    header: '/assets/images/lunarbanner3.png',
     body: '/assets/images/lunarmock.png'
   },
   summary: 

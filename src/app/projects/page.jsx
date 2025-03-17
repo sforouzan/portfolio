@@ -9,7 +9,7 @@ export const metadata = {
 const items = [
   {
     'link': '/beep',
-    'image': '/assets/images/beepsmallbanner1.png',
+    'image': '/assets/images/beepsmallbanner2.png',
     'title': 'BEEP',
     'type': 'APP DEVELOPMENT'
   },
@@ -31,13 +31,24 @@ const items = [
     'title': 'TAYLOR SWIFT',
     'type': 'POSTER DESIGN'
   },
-
+  {
+    'link': '/bassguitar',
+    'image': '/assets/images/bassguitar3.png',
+    'title': 'BASS GUITAR',
+    'type': 'DIGITAL ILLUSTRATION'
+  },
+  {
+    'link': '/fantasypostcard',
+    'image': '/assets/images/postcard-1.png',
+    'title': 'FANTASY POSTCARD',
+    'type': 'CONCEPT DESIGN'
+  },
 ]
 
 export default function Page() {
   return (
     <>
-      <section className="pt-[188px] pb-[400px]">
+      <section className="pt-[188px] pb-[300px]">
         <h1 className="select-none font-CocoGothic text-[12vw] xl:text-[12.5vw] text-milk-white leading-[86%] uppercase animate-fade-up animate-once animate-delay-[500ms]">Projects</h1>
         {/* <h2 className="font-VisbyMed">Filter by: Graphic Design  /  UX/UI Design  / Development</h2> */}
         <div className="pt-[56px]">
