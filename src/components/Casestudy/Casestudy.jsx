@@ -216,7 +216,10 @@ const Casestudy = (props) => {
                             className="absolute top-0 left-0 w-full h-full"
                         ></iframe>
                     </div>
-                    <ScrollRevealSlider image1={"/assets/images/beep-lofi.png"} image2={"/assets/images/beep-hifi.png"} />
+                    <div className="flex flex-col">
+                        <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] mt-10 mb-2 uppercase self-center">Main Features</h3>
+                        <ScrollRevealSlider image1={"/assets/images/beephifi.png"} image2={"/assets/images/beeplofi.png"} />
+                    </div>
                 </div>
 
                 <div>
@@ -262,7 +265,7 @@ const Casestudy = (props) => {
                 </div>
                 <div>
                     <h3 className="font-VisbyBold pt-[30px] pb-[9px] text-[30px] mt-10 mb-2 uppercase">Promotional Materials</h3>
-                    <ScrollReveal2 image1={"/assets/images/beepbrochure2.png"} image2={"/assets/images/beepbrochure1.png"} />
+                    <ScrollReveal2 image1={"/assets/images/brochurebeep2.png"} image2={"/assets/images/brochurebeep1.png"} />
                     <Image className="w-full rounded-[10px] mt-5" src={'/assets/images/beepcard1.png'} height='900' width='900' alt="business card" />
                 </div>
         </div>
