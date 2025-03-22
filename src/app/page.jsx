@@ -30,12 +30,12 @@ export default function Home() {
   return (
     <>
       <ParallaxHero />
-      <div className="pb-20 px-[18vw] 2xl:px-[17vw]">
+      <div className="pb-20 px-[18vw] 2xl:px-[17vw] mt-[150px]">
         {/*<Hero />*/}
         {/* <section className="pt-[110px] pb-[86px]">
         <h2 className="font-CocoGothic uppercase text-[6vw] md:text-[7vw] lg:text-heading">Featured Work</h2>
         <Gallery items={items} />
-      </section> */}
+      </section> 
         <div className="bg-custom-black text-white">
           <section className="py-20">
             <p className="text-center max-w-[1300px] m-auto">
@@ -54,7 +54,7 @@ export default function Home() {
               minus earum excepturi repellendus in repudiandae, sed odit!
             </p>
           </section>
-        </div>
+        </div>*/}
       </div>
     </>
   );
