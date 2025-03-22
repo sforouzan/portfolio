@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = ({ theme }) => {
   return (
-    <footer className="pb-20">
+    <footer className="pb-20 px-[18vw] 2xl:px-[17vw]">
       <hr className={classNames("border-none m-0 w-full h-2",
         {
           'bg-white': theme === 'dark',

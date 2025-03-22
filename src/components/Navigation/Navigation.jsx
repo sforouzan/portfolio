@@ -2,14 +2,20 @@
 import Image from "next/image";
 import { useState } from "react";
 import classNames from "classnames";
+import { usePathname } from "next/navigation";
+
 const Navigation = ({isSticky = true}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); 
+  const isHomePage = pathname === "/";
   return (
-    <nav className={classNames("z-[999]",
-      {
-        'sticky top-0 pt-8 px-[15px] md:px-[40px]': !!isSticky, 
-      })}>
-      <div className="flex justify-between">
+    <nav
+      className={classNames("z-[999] w-full", {
+        "fixed top-0 pt-8 px-[15px] md:px-[40px]": isHomePage, 
+        "sticky top-0 pt-8 px-[15px] md:px-[40px]": !isHomePage && isSticky, 
+      })}
+    >
+      <div className="flex justify-between w-full">
         <a href="/">
           <Image className="w-full max-w-[45px] md:max-w-[59px]" src={'/assets/images/whitelogo.svg'} alt="logo" height="61" width="59" />
         </a>

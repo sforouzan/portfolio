@@ -9,6 +9,9 @@ export default withMT({
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'flat-bg': "url('/assets/images/flatbg.png')",
+      },
       fontFamily: {
         CocoGothic: ["CocoGothic", 'sans-serif'],
         VisbyCF: ["VisbyCF", 'sans-serif'],

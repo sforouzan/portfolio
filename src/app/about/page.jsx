@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="relative 1600xl:mt-2 select-none">
+    <main className="relative 1600xl:mt-2 select-none pb-20 px-[18vw] 2xl:px-[17vw]">
       <div className="flex flex-col mb-60 md:flex-row 1600xl:flex 1600xl:pt-[30px] gap-x-[30px]">
         <div className="animate-fade-up animate-once animate-delay-[250ms]" >
           <Image className="rounded-[10px] md:max-h-[38vw] 1600xl:max-h-[40vw] md:sticky md:top-[96px]" src={'/assets/images/self1.png'} height='1514' width='1170' alt="self" layout="responsive" />
@@ -29,7 +29,7 @@ export default function Page() {
           <span className="animate-fade-down animate-once animate-delay-[1700ms]">n</span> 
           <span className="animate-fade-down animate-once animate-delay-[1700ms]">
               <Image
-                  className="ml-2 w-[19px] md:w-[55px] animate-fade animate-infinite animate-duration-[1100ms] animate-ease-in animate-alternate"
+                  className="ml-2 w-[19px] md:w-[55px] animate-fade animate-infinite animate-duration-[1500ms] animate-delay-[2100ms] animate-ease-in animate-alternate"
                   src={'assets/images/whitestar.svg'}
                   height="100"
                   width="83"

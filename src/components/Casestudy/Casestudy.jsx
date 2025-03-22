@@ -43,6 +43,7 @@ const Casestudy = (props) => {
   const [activeImage, setActiveImage] = useState("/assets/images/feature1.png");
 
   return (
+    <div className="pb-20 px-[18vw] 2xl:px-[17vw]">
     <div className="pt-[190px] pb-[55px] md:mb-60">
       <h1 className="text-[12vw] font-CocoGothic text-milk-white leading-[86%] uppercase">{title}</h1>
       <p className="font-VisbyCF uppercase text-[30px] pt-2">{type}</p>
@@ -269,6 +270,7 @@ const Casestudy = (props) => {
                     <Image className="w-full rounded-[10px] mt-5" src={'/assets/images/beepcard1.png'} height='900' width='900' alt="business card" />
                 </div>
         </div>
+    </div>
     </div>
   )
 }

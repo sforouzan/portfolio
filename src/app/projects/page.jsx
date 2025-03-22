@@ -47,7 +47,7 @@ const items = [
 
 export default function Page() {
   return (
-    <>
+    <div className="pb-20 px-[18vw] 2xl:px-[17vw]">
       <section className="pt-[100px] pb-[120px] xl:pt-[188px] xl:pb-[250px]">
         <h1 className="select-none font-CocoGothic text-[12vw] xl:text-[12.5vw] text-milk-white leading-[86%] uppercase animate-fade-up animate-once animate-delay-[500ms]">Projects</h1>
         {/* <h2 className="font-VisbyMed">Filter by: Graphic Design  /  UX/UI Design  / Development</h2> */}
@@ -56,6 +56,6 @@ export default function Page() {
           <p className="font-VisbyMed mt-10">Note: More projects to be added soon, stay tuned ✨</p>
         </div>
       </section>
-    </>
+    </div>
   )
 }

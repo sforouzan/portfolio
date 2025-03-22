@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
         <body className="bg-custom-black text-milk-white">
           <Providers>
             <Navigation />
-              <main className="px-[18vw] 2xl:px-[17vw]">
+              <main>
                 {children}
                 <div>
                   <Footer theme={'light'} />
