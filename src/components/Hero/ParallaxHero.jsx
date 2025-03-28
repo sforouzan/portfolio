@@ -34,26 +34,63 @@ const ParallaxHero = () => {
       size: "7%",
     },
 
-    // right side:
+    // center:
     {
       src: "/assets/images/star-landing.svg",
-      position: "top-[80px] right-[10%]",
-      size: "9%",
+      position: "top-[40px] right-[60%]",
+      size: "7%",
     },
     {
       src: "/assets/images/star-landing.svg",
-      position: "top-[130px] right-[16%]",
+      position: "top-[130px] right-[65%]",
+      size: "4%",
+    },
+    {
+      src: "/assets/images/star-landing.svg",
+      position: "top-[20px] right-[30%]",
+      size: "3%",
+    },
+    {
+      src: "/assets/images/star-landing.svg",
+      position: "top-[200px] right-[40%]",
       size: "5%",
+    },
+
+    // right side:
+    {
+      src: "/assets/images/star-landing.svg",
+      position: "top-[160px] right-[8%]",
+      size: "2%",
+    },
+    {
+      src: "/assets/images/star-landing.svg",
+      position: "top-[80px] right-[10%]",
+      size: "7%",
+    },
+    {
+      src: "/assets/images/star-landing.svg",
+      position: "top-[200px] right-[23%]",
+      size: "5%",
+    },
+    {
+      src: "/assets/images/star-landing.svg",
+      position: "top-[260px] right-[25%]",
+      size: "2.5%",
+    },
+    {
+      src: "/assets/images/star-landing.svg",
+      position: "top-[300px] right-[8%]",
+      size: "6%",
     },
   ];
 
   const iconRefs = useRef(icons.map(() => React.createRef()));
 
   useEffect(() => {
-    // Register the ScrollTrigger plugin
+
     gsap.registerPlugin(ScrollTrigger);
 
-    // Set up scroll animations
+    // scroll animations
     gsap.to(leftImageRef.current, {
       x: "-100%",
       ease: "power2.inOut",
@@ -76,7 +113,7 @@ const ParallaxHero = () => {
       },
     });
 
-    // Cursor movement tracking
+    // cursor movement tracking
     const handleMouseMove = (e) => {
       const { clientX } = e;
       const { clientY } = e;
@@ -99,7 +136,7 @@ const ParallaxHero = () => {
           const distance = Math.sqrt(
             (mouseX - iconCenterX) ** 2 + (mouseY - iconCenterY) ** 2
           );
-          const maxDistance = 400; // Distance threshold for max opacity change
+          const maxDistance = 650; // cursor distance for stars opacity change
           const opacity = Math.max(0.25, 1 - distance / maxDistance);
           iconRef.current.style.opacity = opacity;
 
@@ -110,7 +147,6 @@ const ParallaxHero = () => {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Clean up
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -122,7 +158,6 @@ const ParallaxHero = () => {
       ref={heroRef}
       className="relative h-[40vw] lg:h-[115vh] min-h-[350px] w-full overflow-hidden flex items-center justify-center bg-flat-bg bg-cover bg-top animate-fade animate-duration-[3000ms] animate-delay-[1000]"
     >
-      {/* Left background image */}
       <div
         ref={bgImageContainer}
         className="absolute bottom-0 left-0 h-full w-full top-[30px]"
@@ -132,7 +167,7 @@ const ParallaxHero = () => {
       >
         <div
           ref={leftImageRef}
-          className="absolute bottom-0 -left-[25vw] lg:-left-[190px] h-full w-3/5"
+          className="absolute bottom-0 -left-[25vw] lg:-left-[250px] h-full w-3/5"
           style={{
             willChange: "transform",
           }}
@@ -146,7 +181,6 @@ const ParallaxHero = () => {
           />
         </div>
 
-        {/* Right background image */}
         <div
           ref={rightImageRef}
           className="absolute -bottom-[50px] lg:-bottom-[100px] -right-[25vw] lg:-right-[210px] h-full w-3/5"
@@ -156,7 +190,7 @@ const ParallaxHero = () => {
         >
           <Image
             className="h-full w-auto ml-auto object-contain"
-            src={"/assets/images/rightclouds.png"}
+            src={"/assets/images/rightclouds2.png"}
             height={1000}
             width={1000}
             alt="right cloud bg"
@@ -164,7 +198,6 @@ const ParallaxHero = () => {
         </div>
       </div>
 
-      {/* Center content */}
       <div
         ref={contentRef}
         className="relative z-10 text-center rounded-lg text-white pt-[90x] animate-fade-up animate-duration-[2300] animate-delay-[2000]"
@@ -187,17 +220,16 @@ const ParallaxHero = () => {
           <h2 className="mb-[60px] select-none font-VisbyCF text-[22px] md:mb-0 md:text-heroSub leading-tight text-center md:text-center pt-1 md:pt-0">
             UX/UI & GRAPHIC DESIGNER.
           </h2>
-          {/* <p className="select-none font-VisbyCF text-[20px] leading-tight text-center md:text-center pt-1 md:pt-0">This portfolio site is under construction!🚧⚠️</p> */}
         </div>
       </div>
-      {/* Interactive Icons */}
+
       {icons.map((icon, index) => (
         <div
         key={index}
         ref={iconRefs.current[index]}
         className={`absolute ${icon.position} z-10 lg:mt-[90px] animate-infinite`}
         style={{
-          opacity: 0.25,
+          opacity: 0.15,
           transition: "opacity 0.2s ease",
           width: "auto",
           height: icon.size,
@@ -209,7 +241,7 @@ const ParallaxHero = () => {
           <img src={icon.src} alt={`icon-${index}`} className="w-full h-full" />
         </div>
       ))}
-      <div className="bg-gradient-to-b from-transparent to-custom-black w-full absolute bottom-0 left-0 h-[100px]"></div>
+      <div className="bg-gradient-to-b from-transparent to-custom-black w-full absolute bottom-0 left-0 h-[200px]"></div>
     </div>
   );
 };

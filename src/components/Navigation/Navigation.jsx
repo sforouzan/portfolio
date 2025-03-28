@@ -25,7 +25,7 @@ const Navigation = ({isSticky = true}) => {
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="relative h-[20px] w-full">
-              {/* Menu Text */}
+
               {!isOpen && (
                 <>
                   <span className="absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
@@ -37,7 +37,6 @@ const Navigation = ({isSticky = true}) => {
                 </>
               )}
 
-              {/* Close Text */}
               {isOpen && (
                 <>
                   <span className="absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
