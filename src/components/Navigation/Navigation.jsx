@@ -21,17 +21,17 @@ const Navigation = ({isSticky = true}) => {
         </a>
         <div className="relative">
           <button
-            className="font-VisbyMed cursor-pointer border-2 rounded-full border-milk-white px-[16px] md:px-[20px] py-[10px] text-[14px] md:text-[16px] leading-snug self-center uppercase relative z-[2] min-w-[80px] md:min-w-[100px] text-center bg-custom-black overflow-hidden group"
+            className="select-none font-VisbyMed cursor-pointer border-2 rounded-full border-milk-white px-[16px] md:px-[20px] py-[10px] text-[14px] md:text-[16px] leading-snug self-center uppercase relative z-[2] min-w-[80px] md:min-w-[100px] text-center bg-custom-black overflow-hidden group"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="relative h-[20px] w-full">
 
               {!isOpen && (
                 <>
-                  <span className="absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
+                  <span className="select-none absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
                     Menu
                   </span>
-                  <span className="absolute left-0 w-full translate-y-[30px] transition-all duration-300 invisible group-hover:visible group-hover:translate-y-0">
+                  <span className="select-none absolute left-0 w-full translate-y-[30px] transition-all duration-300 invisible group-hover:visible group-hover:translate-y-0">
                     Menu
                   </span>
                 </>
@@ -39,10 +39,10 @@ const Navigation = ({isSticky = true}) => {
 
               {isOpen && (
                 <>
-                  <span className="absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
+                  <span className="select-none absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
                     Close
                   </span>
-                  <span className="absolute left-0 w-full translate-y-[30px] transition-all duration-300 invisible group-hover:visible group-hover:translate-y-0">
+                  <span className="select-none absolute left-0 w-full translate-y-[30px] transition-all duration-300 invisible group-hover:visible group-hover:translate-y-0">
                     Close
                   </span>
                 </>
@@ -56,7 +56,7 @@ const Navigation = ({isSticky = true}) => {
                   <li>
                   <a 
                     href="/" 
-                    className="relative inline-block cursor-pointer font-VisbyMed text-white 
+                    className="select-none relative inline-block cursor-pointer font-VisbyMed text-white 
                               before:bg-white before:absolute before:-bottom-0 before:-left-0 
                               before:block before:h-[1px] before:w-full before:origin-bottom-right 
                               before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
@@ -67,7 +67,7 @@ const Navigation = ({isSticky = true}) => {
                   </li>
                   <li>
                     <a 
-                      className="relative inline-block cursor-pointer font-VisbyMed text-white 
+                      className="select-none relative inline-block cursor-pointer font-VisbyMed text-white 
                               before:bg-white before:absolute before:-bottom-0 before:-left-0 
                               before:block before:h-[1px] before:w-full before:origin-bottom-right 
                               before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
@@ -76,7 +76,7 @@ const Navigation = ({isSticky = true}) => {
                   </li>
                   <li>
                     <a 
-                      className="relative inline-block cursor-pointer font-VisbyMed text-white 
+                      className="select-none relative inline-block cursor-pointer font-VisbyMed text-white 
                               before:bg-white before:absolute before:-bottom-0 before:-left-0 
                               before:block before:h-[1px] before:w-full before:origin-bottom-right 
                               before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
@@ -84,7 +84,7 @@ const Navigation = ({isSticky = true}) => {
                       href="/projects">Projects</a>
                   </li>
                 </ul>
-                <div className="flex justify-end pt-3">
+                <div className="select-none flex justify-end pt-3">
                   <Image src={'assets/images/whitestar.svg'} height='33' width='28' alt="star icon" />
                   <Image src={'assets/images/whitestar.svg'} height='33' width='28' alt="star icon" />
                   <Image src={'assets/images/whitestar.svg'} height='33' width='28' alt="star icon" />

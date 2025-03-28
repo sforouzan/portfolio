@@ -173,7 +173,7 @@ const ParallaxHero = () => {
           }}
         >
           <Image
-            className="h-full w-auto object-contain"
+            className="h-full w-auto object-contain select-none"
             src={"/assets/images/leftclouds.png"}
             height={1000}
             width={1000}
@@ -189,7 +189,7 @@ const ParallaxHero = () => {
           }}
         >
           <Image
-            className="h-full w-auto ml-auto object-contain"
+            className="h-full w-auto ml-auto object-contain select-none"
             src={"/assets/images/rightclouds2.png"}
             height={1000}
             width={1000}
