@@ -87,7 +87,6 @@ const ParallaxHero = () => {
   const iconRefs = useRef(icons.map(() => React.createRef()));
 
   useEffect(() => {
-
     gsap.registerPlugin(ScrollTrigger);
 
     // scroll animations
@@ -134,13 +133,16 @@ const ParallaxHero = () => {
           const iconCenterX = rect.left + rect.width / 2;
           const iconCenterY = rect.top + rect.height / 2;
           const distance = Math.sqrt(
-            (mouseX - iconCenterX) ** 2 + (mouseY - iconCenterY) ** 2
+            (mouseX - iconCenterX) ** 2 + (mouseY - iconCenterY) ** 2,
           );
           const maxDistance = 650; // cursor distance for stars opacity change
           const opacity = Math.max(0.25, 1 - distance / maxDistance);
           iconRef.current.style.opacity = opacity;
 
-          iconRef.current.classList.toggle('animate-pulse', distance <= maxDistance);
+          iconRef.current.classList.toggle(
+            "animate-pulse",
+            distance <= maxDistance,
+          );
         }
       });
     };
@@ -217,7 +219,7 @@ const ParallaxHero = () => {
             </span>{" "}
             <span>forouzan</span>
           </h1>
-          <h2 className="mb-[60px] select-none font-VisbyCF text-[22px] md:mb-0 md:text-heroSub leading-tight text-center md:text-center pt-1 md:pt-0">
+          <h2 className="mb-[60px] select-none font-DMSans text-[22px] md:mb-0 md:text-heroSub leading-tight text-center md:text-center pt-1 md:pt-0">
             UX/UI & GRAPHIC DESIGNER.
           </h2>
         </div>
@@ -225,19 +227,19 @@ const ParallaxHero = () => {
 
       {icons.map((icon, index) => (
         <div
-        key={index}
-        ref={iconRefs.current[index]}
-        className={`absolute ${icon.position} z-10 lg:mt-[90px] animate-infinite`}
-        style={{
-          opacity: 0.15,
-          transition: "opacity 0.2s ease",
-          width: "auto",
-          height: icon.size,
-          minWidth: "30px",
-          minHeight: "30px",
-          animationDuration: `${Math.round(600 + Math.random() * 400)}ms`,
-        }}
-      >
+          key={index}
+          ref={iconRefs.current[index]}
+          className={`absolute ${icon.position} z-10 lg:mt-[90px] animate-infinite`}
+          style={{
+            opacity: 0.15,
+            transition: "opacity 0.2s ease",
+            width: "auto",
+            height: icon.size,
+            minWidth: "30px",
+            minHeight: "30px",
+            animationDuration: `${Math.round(600 + Math.random() * 400)}ms`,
+          }}
+        >
           <img src={icon.src} alt={`icon-${index}`} className="w-full h-full" />
         </div>
       ))}

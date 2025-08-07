@@ -20,13 +20,13 @@ const Twocolproject = (props) => {
             <h1 className="select-none text-[6.5vw] font-CocoGothic text-milk-white leading-[86%] uppercase">
               {title}
             </h1>
-            <p className="select-none font-VisbyCF uppercase text-[30px] pt-2">
+            <p className="select-none font-DMSans uppercase text-[30px] pt-2">
               {type}
             </p>
-            <p className="select-none font-VisbyCF uppercase italic pt-2 pb-[27px]">
+            <p className="select-none font-DMSans uppercase italic pt-2 pb-[27px]">
               Programs used: {programsUsed}
             </p>
-            <h3 className="select-none font-VisbyCF 1600xl:pt-[30px] pb-[9px] text-[30px] uppercase">
+            <h3 className="select-none font-DMSans 1600xl:pt-[30px] pb-[9px] text-[30px] uppercase">
               Summary
             </h3>
             <div className="flex-col justify-end w-full">

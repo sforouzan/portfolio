@@ -10,19 +10,17 @@ export default withMT({
   theme: {
     extend: {
       backgroundImage: {
-        'flat-bg': "url('/assets/images/flatbg.png')",
+        "flat-bg": "url('/assets/images/flatbg.png')",
       },
       fontFamily: {
-        CocoGothic: ["CocoGothic", 'sans-serif'],
-        VisbyCF: ["VisbyCF", 'sans-serif'],
-        VisbyMed: ["VisbyMed", 'sans-serif'],
-        VisbyBold: ["VisbyBold", 'sans-serif']
+        CocoGothic: ["CocoGothic", "sans-serif"],
+        DMSans: ["DM Sans", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'custom-black': '#1E1D1C',
-        'milk-white': '#E5E1E6'
+        "custom-black": "#1E1D1C",
+        "milk-white": "#E5E1E6",
       },
       fontSize: {
         hero: "clamp(58px, 15vw, 400px)",
@@ -31,13 +29,11 @@ export default withMT({
         cardTitle: "clamp(18px, 2vw, 36px)",
       },
       screens: {
-        'xxl': '1700px',
-        '1600xl': '1600px',
-        '1400xl': '1400px'
-      }
+        xxl: "1700px",
+        "1600xl": "1600px",
+        "1400xl": "1400px",
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
+  plugins: [require("tailwindcss-animated")],
 });

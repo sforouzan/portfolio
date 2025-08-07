@@ -1,6 +1,6 @@
-"use client"; 
-import { ThemeProvider } from "@material-tailwind/react";
+"use client";
+import React from "react";
 
 export function Providers({ children }) {
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return <>{children}</>;
 }
