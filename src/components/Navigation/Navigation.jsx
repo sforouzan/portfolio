@@ -4,28 +4,33 @@ import { useState } from "react";
 import classNames from "classnames";
 import { usePathname } from "next/navigation";
 
-const Navigation = ({isSticky = true}) => {
+const Navigation = ({ isSticky = true }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); 
+  const pathname = usePathname();
   const isHomePage = pathname === "/";
   return (
     <nav
       className={classNames("z-[999] w-full", {
-        "fixed top-0 pt-8 px-[15px] md:px-[40px]": isHomePage, 
-        "sticky top-0 pt-8 px-[15px] md:px-[40px]": !isHomePage && isSticky, 
+        "fixed top-0 pt-8 px-[15px] md:px-[40px]": isHomePage,
+        "sticky top-0 pt-8 px-[15px] md:px-[40px]": !isHomePage && isSticky,
       })}
     >
       <div className="flex justify-between w-full">
         <a href="/">
-          <Image className="w-full max-w-[45px] md:max-w-[59px]" src={'/assets/images/whitelogo.svg'} alt="logo" height="61" width="59" />
+          <Image
+            className="w-full max-w-[45px] md:max-w-[59px]"
+            src={"/assets/images/whitelogo.svg"}
+            alt="logo"
+            height="61"
+            width="59"
+          />
         </a>
         <div className="relative">
           <button
-            className="select-none font-VisbyMed cursor-pointer border-2 rounded-full border-milk-white px-[16px] md:px-[20px] py-[10px] text-[14px] md:text-[16px] leading-snug self-center uppercase relative z-[2] min-w-[80px] md:min-w-[100px] text-center bg-custom-black overflow-hidden group"
+            className="select-none font-DMSans font-medium cursor-pointer border-2 rounded-full border-milk-white px-[16px] md:px-[20px] py-[10px] text-[14px] md:text-[16px] leading-snug self-center uppercase relative z-[2] min-w-[80px] md:min-w-[100px] text-center bg-custom-black overflow-hidden group"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="relative h-[20px] w-full">
-
               {!isOpen && (
                 <>
                   <span className="select-none absolute left-0 w-full group-hover:translate-y-[-30px] transition-all duration-300 group-hover:invisible">
@@ -49,53 +54,74 @@ const Navigation = ({isSticky = true}) => {
               )}
             </div>
           </button>
-          {isOpen &&
+          {isOpen && (
             <menu className="border-2 border-milk-white rounded-[25px] absolute -top-4 -right-4 p-5 pb-4 w-[170px] bg-custom-black">
               <div className="pt-12">
                 <ul className="flex flex-col items-end pr-0.5 uppercase text-[16px]">
                   <li>
-                  <a 
-                    href="/" 
-                    className="select-none relative inline-block cursor-pointer font-VisbyMed text-white 
-                              before:bg-white before:absolute before:-bottom-0 before:-left-0 
-                              before:block before:h-[1px] before:w-full before:origin-bottom-right 
-                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
+                    <a
+                      href="/"
+                      className="select-none relative inline-block cursor-pointer font-DMSans font-medium text-white
+                              before:bg-white before:absolute before:-bottom-0 before:-left-0
+                              before:block before:h-[1px] before:w-full before:origin-bottom-right
+                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out
                               hover:before:origin-bottom-left hover:before:scale-x-100"
-                  >
-                    Home
-                  </a>
+                    >
+                      Home
+                    </a>
                   </li>
                   <li>
-                    <a 
-                      className="select-none relative inline-block cursor-pointer font-VisbyMed text-white 
-                              before:bg-white before:absolute before:-bottom-0 before:-left-0 
-                              before:block before:h-[1px] before:w-full before:origin-bottom-right 
-                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
-                              hover:before:origin-bottom-left hover:before:scale-x-100" 
-                      href="/about">About</a>
+                    <a
+                      className="select-none relative inline-block cursor-pointer font-DMSans font-medium text-white
+                              before:bg-white before:absolute before:-bottom-0 before:-left-0
+                              before:block before:h-[1px] before:w-full before:origin-bottom-right
+                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out
+                              hover:before:origin-bottom-left hover:before:scale-x-100"
+                      href="/about"
+                    >
+                      About
+                    </a>
                   </li>
                   <li>
-                    <a 
-                      className="select-none relative inline-block cursor-pointer font-VisbyMed text-white 
-                              before:bg-white before:absolute before:-bottom-0 before:-left-0 
-                              before:block before:h-[1px] before:w-full before:origin-bottom-right 
-                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out 
-                              hover:before:origin-bottom-left hover:before:scale-x-100" 
-                      href="/projects">Projects</a>
+                    <a
+                      className="select-none relative inline-block cursor-pointer font-DMSans font-medium text-white
+                              before:bg-white before:absolute before:-bottom-0 before:-left-0
+                              before:block before:h-[1px] before:w-full before:origin-bottom-right
+                              before:scale-x-0 before:transition before:duration-500 before:ease-in-out
+                              hover:before:origin-bottom-left hover:before:scale-x-100"
+                      href="/projects"
+                    >
+                      Projects
+                    </a>
                   </li>
                 </ul>
                 <div className="select-none flex justify-end pt-3">
-                  <Image src={'assets/images/whitestar.svg'} height='33' width='28' alt="star icon" />
-                  <Image src={'assets/images/whitestar.svg'} height='33' width='28' alt="star icon" />
-                  <Image src={'assets/images/whitestar.svg'} height='33' width='28' alt="star icon" />
+                  <Image
+                    src={"assets/images/whitestar.svg"}
+                    height="33"
+                    width="28"
+                    alt="star icon"
+                  />
+                  <Image
+                    src={"assets/images/whitestar.svg"}
+                    height="33"
+                    width="28"
+                    alt="star icon"
+                  />
+                  <Image
+                    src={"assets/images/whitestar.svg"}
+                    height="33"
+                    width="28"
+                    alt="star icon"
+                  />
                 </div>
               </div>
             </menu>
-          }
+          )}
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navigation;

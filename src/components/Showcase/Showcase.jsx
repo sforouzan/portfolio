@@ -10,10 +10,10 @@ const Showcase = (props) => {
         <h1 className="select-none text-[12vw] font-CocoGothic text-milk-white leading-[86%] uppercase">
           {title}
         </h1>
-        <p className="select-none font-VisbyCF uppercase text-[30px] pt-2">
+        <p className="select-none font-DMSans uppercase text-[30px] pt-2">
           {type}
         </p>
-        <p className="select-none font-VisbyCF uppercase italic pt-2 pb-[27px]">
+        <p className="select-none font-DMSans uppercase italic pt-2 pb-[27px]">
           Programs used: {programsUsed}
         </p>
         <Image
@@ -57,7 +57,7 @@ const Showcase = (props) => {
               />
             </div>
 
-            <h3 className="select-none font-VisbyCF pt-[30px] pb-[9px] text-[30px] uppercase">
+            <h3 className="select-none font-DMSans pt-[30px] pb-[9px] text-[30px] uppercase">
               Summary
             </h3>
             {summary}
@@ -74,7 +74,7 @@ const Showcase = (props) => {
               <div
                 key={index}
                 className={classNames(
-                  "bg-gray-100 h-auto relative rounded-[10px]"
+                  "bg-gray-100 h-auto relative rounded-[10px]",
                 )}
               >
                 <Image

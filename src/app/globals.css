@@ -1,47 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 @font-face {
-    font-family: 'CocoGothic';
-    src: url('/assets/fonts/CocoGothicBOLD.TTF') format('truetype');
+    font-family: "CocoGothic";
+    src: url("/assets/fonts/CocoGothicBOLD.TTF") format("truetype");
     /* font-weight: normal;
     font-style: normal; */
 }
-  
-@font-face {
-    font-family: 'VisbyCF';
-    src: url('/assets/fonts/VisbyCFLight.TTF') format('truetype');
-    /* font-weight: bold;
-    font-style: normal; */
-}
-
-@font-face {
-    font-family: 'VisbyMed';
-    src: url('/assets/fonts/VisbyCFMed.TTF') format('truetype');
-    /* font-weight: bold;
-    font-style: normal; */
-}
-
-@font-face {
-    font-family: 'VisbyBold';
-    src: url('/assets/fonts/VisbyCFBold.TTF') format('truetype');
-    /* font-weight: bold;
-    font-style: normal; */
-}
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  cursor: url('/assets/images/cursor.png') 18 18, auto;
+    cursor:
+        url("/assets/images/cursor.png") 18 18,
+        auto;
 }
 
 @layer utilities {
     .animate-fadeIn {
-      animation: fadeIn 2s ease-in-out forwards;
+        animation: fadeIn 2s ease-in-out forwards;
     }
-  }
+}
 
-  body {
-    background-color: #1E1D1C;
+body {
+    background-color: #1e1d1c;
     overflow-x: hidden;
-  }
+}
