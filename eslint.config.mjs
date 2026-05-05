@@ -9,6 +9,11 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals").map((config) => ({
+    ...config,
+    files: config.files ?? ["**/*.{js,mjs,cjs,jsx,ts,tsx}"],
+  })),
+];
 
 export default eslintConfig;
