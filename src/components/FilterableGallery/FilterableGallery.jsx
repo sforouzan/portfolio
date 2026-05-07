@@ -32,7 +32,12 @@ const FilterableGallery = ({ items }) => {
       <div
         role="tablist"
         aria-label="Filter featured work"
-        className="relative z-20 flex flex-col md:flex-row md:flex-wrap md:justify-center gap-2 pt-8 pb-[40px]"
+        className={classNames(
+          "relative z-20 flex flex-col md:flex-row md:flex-wrap md:justify-center gap-2 pt-8 pb-[40px]",
+          !animationDone && "animate-fade-up animate-once"
+         )}
+
+      style={animationDone ? undefined : { animationDelay: `${ANIMATION_DELAY_BASE_MS - 250}ms` }}
       >
         {FILTERS.map((filter) => {
           const isActive = activeFilter === filter.id;
