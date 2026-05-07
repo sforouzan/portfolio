@@ -14,6 +14,11 @@ const eslintConfig = [
     ...config,
     files: config.files ?? ["**/*.{js,mjs,cjs,jsx,ts,tsx}"],
   })),
+  {
+    rules: {
+      "react/no-unescaped-entities": "off",
+    },
+  },
 ];
 
 export default eslintConfig;

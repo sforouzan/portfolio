@@ -16,7 +16,7 @@ export default function Page() {
         <p className="select-none font-DMSans uppercase text-[30px] pt-2">
           Publication Design – B2B SaaS Platform
         </p>
-        <p className="select-none font-DMSans uppercase italic pt-2 pb-[27px]">
+        <p className="select-none font-DMSans uppercase italic pt-2 pb-[50px]">
           Programs used: Figma, Adobe Photoshop
         </p>
         <Image
@@ -82,7 +82,9 @@ export default function Page() {
         />
         <div className="flex justify-center md:justify-end mt-6 md:mt-8">
           <a
-            href="#"
+            href="/assets/pdfs/jeto-article.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="select-none font-DMSans font-medium uppercase border-2 border-milk-white rounded-full px-[24px] md:px-[28px] py-[12px] text-[14px] md:text-[16px] leading-snug bg-custom-black hover:bg-milk-white hover:text-custom-black transition-colors duration-300"
           >
             View Full Article

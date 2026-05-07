@@ -24,6 +24,8 @@ export default function Page() {
           alt="Jeto redesign hero"
           width={2560}
           height={1300}
+          quality={95}
+          sizes="64vw"
           className="select-none rounded-[10px] w-full h-auto"
           priority
         />
@@ -112,6 +114,8 @@ export default function Page() {
               alt={`Jeto redesign icon ${n}`}
               width={1000}
               height={1000}
+              quality={95}
+              sizes="(min-width: 640px) 21vw, 64vw"
               className="select-none w-full h-auto rounded-[10px]"
             />
           ))}
@@ -140,6 +144,8 @@ export default function Page() {
               alt={`Jeto redesign custom graphic ${n}`}
               width={1000}
               height={1000}
+              quality={95}
+              sizes="(min-width: 640px) 21vw, 64vw"
               className="select-none w-full h-auto"
             />
           ))}
@@ -180,6 +186,8 @@ export default function Page() {
               alt={`Jeto redesign key takeaway ${n}`}
               width={1000}
               height={1200}
+              quality={95}
+              sizes="(min-width: 640px) 21vw, 64vw"
               className="select-none w-full h-auto rounded-[10px]"
             />
           ))}

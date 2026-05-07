@@ -16,7 +16,7 @@ export default function Page() {
         <p className="select-none font-DMSans uppercase text-[30px] pt-2">
           Menu Design
         </p>
-        <p className="select-none font-DMSans uppercase italic pt-2 pb-[27px]">
+        <p className="select-none font-DMSans uppercase italic pt-2 pb-[50px]">
           Programs used: Adobe InDesign, Adobe Photoshop, Adobe Illustrator
         </p>
         <Image
