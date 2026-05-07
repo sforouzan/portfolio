@@ -37,7 +37,7 @@ const items = [
   },
   {
     link: "/velvetbistro",
-    image: "/assets/images/velvet-bistro-banner.png",
+    image: "/assets/images/velvet-bistro-project.png",
     title: "VELVET BISTRO",
     type: "MENU DESIGN",
     category: "graphic-design",

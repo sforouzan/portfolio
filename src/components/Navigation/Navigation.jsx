@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import classNames from "classnames";
 import { usePathname } from "next/navigation";
@@ -10,13 +11,13 @@ const Navigation = ({ isSticky = true }) => {
   const isHomePage = pathname === "/";
   return (
     <nav
-      className={classNames("z-[999] w-full", {
+      className={classNames("z-[999] w-full pointer-events-none", {
         "fixed top-0 pt-8 px-[15px] md:px-[40px]": isHomePage,
         "sticky top-0 pt-8 px-[15px] md:px-[40px]": !isHomePage && isSticky,
       })}
     >
       <div className="flex justify-between w-full">
-        <a href="/">
+        <Link href="/" className="pointer-events-auto">
           <Image
             className="w-full max-w-[45px] md:max-w-[59px]"
             src={"/assets/images/whitelogo.svg"}
@@ -24,8 +25,8 @@ const Navigation = ({ isSticky = true }) => {
             height="61"
             width="59"
           />
-        </a>
-        <div className="relative">
+        </Link>
+        <div className="relative pointer-events-auto">
           <button
             className="select-none font-DMSans font-medium cursor-pointer border-2 rounded-full border-milk-white px-[16px] md:px-[20px] py-[10px] text-[14px] md:text-[16px] leading-snug self-center uppercase relative z-[2] min-w-[80px] md:min-w-[100px] text-center bg-custom-black overflow-hidden group"
             onClick={() => setIsOpen(!isOpen)}
@@ -59,7 +60,7 @@ const Navigation = ({ isSticky = true }) => {
               <div className="pt-12">
                 <ul className="flex flex-col items-end pr-0.5 uppercase text-[16px]">
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="select-none relative inline-block cursor-pointer font-DMSans font-medium text-white
                               before:bg-white before:absolute before:-bottom-0 before:-left-0
@@ -68,7 +69,7 @@ const Navigation = ({ isSticky = true }) => {
                               hover:before:origin-bottom-left hover:before:scale-x-100"
                     >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a
