@@ -8,11 +8,11 @@ export const metadata = {
 
 const items = [
   {
-    link: "/beep",
-    image: "/assets/images/beepsmallbanner2.png",
-    title: "BEEP",
-    type: "APP DEVELOPMENT",
-    category: "app-website",
+    link: "/jetoarticle",
+    image: "/assets/images/jeto-article-banner1.png",
+    title: "JETO ARTICLE",
+    type: "PUBLICATION DESIGN",
+    category: "graphic-design",
   },
   {
     link: "/jetoredesign",
@@ -29,11 +29,11 @@ const items = [
     category: "graphic-design",
   },
   {
-    link: "/jetoarticle",
-    image: "/assets/images/jeto-article-banner.png",
-    title: "JETO ARTICLE",
-    type: "PUBLICATION DESIGN",
-    category: "graphic-design",
+    link: "/beep",
+    image: "/assets/images/beepsmallbanner2.png",
+    title: "BEEP",
+    type: "APP DEVELOPMENT",
+    category: "app-website",
   },
   {
     link: "/velvetbistro",

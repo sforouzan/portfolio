@@ -188,7 +188,7 @@ export default function Page() {
               height={1200}
               quality={95}
               sizes="(min-width: 640px) 21vw, 64vw"
-              className="select-none w-full h-auto rounded-[10px]"
+              className="select-none w-full h-auto"
             />
           ))}
         </div>
