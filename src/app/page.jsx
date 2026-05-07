@@ -16,7 +16,7 @@ const items = [
   },
   {
     link: "/jetoredesign",
-    image: "/assets/images/jeto-redesign-banner.png",
+    image: "/assets/images/jeto-redesign-banner3.png",
     title: "JETO REDESIGN",
     type: "BRAND EVOLUTION",
     category: "app-website",
