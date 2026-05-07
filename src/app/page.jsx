@@ -1,6 +1,5 @@
-import Hero from "@/components/Hero/Hero";
 import ParallaxHero from "@/components/Hero/ParallaxHero";
-import Gallery from "@/components/Gallery/Gallery";
+import FilterableGallery from "@/components/FilterableGallery/FilterableGallery";
 
 export const metadata = {
   title: "Shirin Forouzan",
@@ -9,20 +8,46 @@ export const metadata = {
 
 const items = [
   {
-    link: "/",
-    image: "https://placehold.co/600x400.svg",
+    link: "/beep",
+    image: "/assets/images/beepsmallbanner2.png",
+    title: "BEEP",
+    type: "APP DEVELOPMENT",
+    category: "app-website",
   },
   {
-    link: "/",
-    image: "https://placehold.co/600x400.svg",
+    link: "/jetoredesign",
+    image: "/assets/images/jeto-redesign-banner.png",
+    title: "JETO REDESIGN",
+    type: "BRAND EVOLUTION",
+    category: "app-website",
   },
   {
-    link: "/",
-    image: "https://placehold.co/600x400.svg",
+    link: "/reverie",
+    image: "/assets/images/reverie-banner.png",
+    title: "REVERIE",
+    type: "MAGAZINE DESIGN",
+    category: "graphic-design",
   },
   {
-    link: "/",
-    image: "https://placehold.co/600x400.svg",
+    link: "/jetoarticle",
+    image: "/assets/images/jeto-article-banner.png",
+    title: "JETO ARTICLE",
+    type: "PUBLICATION DESIGN",
+    category: "graphic-design",
+  },
+  {
+    link: "/velvetbistro",
+    image: "/assets/images/velvet-bistro-banner.png",
+    title: "VELVET BISTRO",
+    type: "MENU DESIGN",
+    category: "graphic-design",
+  },
+  {
+    link: "/lunarbloom",
+    image: "/assets/images/cans.png",
+    title: "LUNAR BLOOM",
+    type: "PACKAGING DESIGN",
+    category: "graphic-design",
   },
 ];
 
@@ -30,31 +55,21 @@ export default function Home() {
   return (
     <>
       <ParallaxHero />
-      <div className="pb-20 px-[18vw] 2xl:px-[17vw] mt-[150px]">
-        {/*<Hero />*/}
-        {/* <section className="pt-[110px] pb-[86px]">
-        <h2 className="font-CocoGothic uppercase text-[6vw] md:text-[7vw] lg:text-heading">Featured Work</h2>
-        <Gallery items={items} />
-      </section> 
-        <div className="bg-custom-black text-white">
-          <section className="py-20">
-            <p className="text-center max-w-[1300px] m-auto">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-              quae laborum possimus ipsum quibusdam, in blanditiis veritatis
-              voluptatem earum. Aliquid asperiores odio, vitae quidem sapiente
-              similique, nobis quos alias minima hic quis quaerat, nulla
-              repellendus tempore repellat consequatur pariatur aut? Id ex
-              necessitatibus voluptatum culpa voluptates incidunt dignissimos,
-              porro perferendis eligendi obcaecati. Architecto, id?
-              Perspiciatis, culpa qui? Laboriosam pariatur hic dolores
-              repellendus maiores impedit excepturi maxime explicabo iure at
-              quasi quis libero eaque consectetur, accusamus praesentium
-              similique tenetur. Aut ipsum sunt doloribus a eveniet tempore
-              optio necessitatibus ipsam molestias vitae placeat doloremque
-              minus earum excepturi repellendus in repudiandae, sed odit!
-            </p>
-          </section>
-        </div>*/}
+      <div className="pb-20 px-[18vw] 2xl:px-[17vw] mt-0 md:mt-[150px]">
+        <section className="pt-[40px] md:pt-[110px] pb-[86px]">
+          <h2 className="font-CocoGothic uppercase text-[6vw] md:text-[7vw] lg:text-heading leading-[86%] text-milk-white text-center md:text-left">
+            Featured Work
+          </h2>
+          <FilterableGallery items={items} />
+          <div className="flex justify-center mt-10 md:mt-12">
+            <a
+              href="/projects"
+              className="select-none font-DMSans font-medium uppercase border-2 border-milk-white rounded-full px-[24px] md:px-[28px] py-[12px] text-[14px] md:text-[16px] leading-snug bg-custom-black hover:bg-milk-white hover:text-custom-black transition-colors duration-300"
+            >
+              View More
+            </a>
+          </div>
+        </section>
       </div>
     </>
   );

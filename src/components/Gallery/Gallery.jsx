@@ -1,21 +1,21 @@
 "use client";
 import classNames from "classnames";
 import Image from "next/image";
-import { useState } from "react";
 
-const Gallery = ({ items }) => {
+const Gallery = ({ items, animate = true }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {items?.map((item, i) => {
         const delay = 1250 + i * 250;
         return (
           <div
-            key={i}
-            style={{ animationDelay: `${delay}ms` }}
+            key={item.link}
+            style={animate ? { animationDelay: `${delay}ms` } : undefined}
             className={classNames(
-              `md:h-[23vw] relative rounded-[10px] animate-fade-up animate-once`,
+              "md:h-[23vw] relative rounded-[10px]",
+              animate && "animate-fade-up animate-once",
               {
-                "md:col-span-2": i % 4 === 0 || i % 4 === 3, // Apply to every 4th div starting from 0 and 3
+                "md:col-span-2": i % 4 === 0 || i % 4 === 3,
               },
             )}
           >
