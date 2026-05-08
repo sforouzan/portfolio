@@ -64,7 +64,7 @@ export default function Page() {
           Jeto is a B2B SaaS platform that helps marketing operations teams
           automate Marketo campaign execution. Over the course of a year, I
           managed their WordPress site and led a visual refresh of their
-          homepage and key marketing pages — evolving the brand away from
+          homepage and key marketing pages, evolving the brand away from
           cartoon illustrations toward a cleaner, more professional aesthetic
           suited to their enterprise audience. I also designed and maintained
           supporting graphic assets across the site.
@@ -91,11 +91,11 @@ export default function Page() {
             already knew.
           </p>
           <p>
-            The approach was strategic restraint. Rather than pushing for
+            The approach was strategic restraint (despite my eagerness). Rather than pushing for
             changes the client wasn&apos;t ready for, I worked within their
             comfort zone by replacing the illustrative characters with
             professional photography, tightening the typography hierarchy,
-            and introducing a more refined use of their existing green
+            and introducing a more refined use of their colour
             palette. The homepage structure stayed familiar while the visual
             language shifted upmarket. Every change was client-approved and
             rolled out incrementally over the course of a year, which also

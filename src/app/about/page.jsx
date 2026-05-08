@@ -79,7 +79,7 @@ export default function Page() {
           </div>
           <div className="md:ml-10 animate-fade-up animate-once animate-delay-[2100ms]">
             <a
-              href="https://drive.google.com/file/d/1uW-tqSKKrC7ihe86RKhw0wi4yDhtONZG/view?usp=sharing"
+              href="/assets/pdfs/shirinf_resume_2026_.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
