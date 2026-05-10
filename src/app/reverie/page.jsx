@@ -13,7 +13,7 @@ export default function Page() {
           Reverie
         </h1>
         <p className="select-none font-DMSans uppercase text-[30px] pt-2">
-          Magazine Design
+          Print Design
         </p>
         <p className="select-none font-DMSans uppercase italic pt-2 pb-[50px]">
           Programs used: Adobe InDesign, Adobe Photoshop

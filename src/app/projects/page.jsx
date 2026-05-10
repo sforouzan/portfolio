@@ -24,7 +24,7 @@ const items = [
     link: "/reverie",
     image: "/assets/images/reverie-banner.png",
     title: "REVERIE",
-    type: "MAGAZINE DESIGN",
+    type: "PRINT DESIGN",
     category: "graphic-design",
   },
   {

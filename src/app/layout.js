@@ -7,7 +7,6 @@ import { Providers } from "@/utilities/providers";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* 1. Add the head section here */}
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
